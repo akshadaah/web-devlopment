@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selctors</title>
+    <style>
+       /*elemnt selector*/
+        div{
+            /*background-color: red;*/
+        }.red{background-color: red;}
+        /*id selector*/
+        #green{
+            background-color: green;
+        }
+        /*child selctor*/
+        div>p{
+            color: aqua;
+            background-color: yellow;
+        }
+        /*desecndant selctor*/
+        div p{
+            color: blue;
+        }
+        /*pseudo selector*/
+        a:visited{
+            color: yellow;
+
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <article>
+        <p>I am a paragraph</p>
+    </article>
+    </div>
+    <div id="green">
+        ANother div
+    </div>
+    <div>
+       <a href="https:google.com"> Go to google</a>
+    </div>
+</body>
+</html>
